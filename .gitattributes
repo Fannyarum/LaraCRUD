@@ -1,15 +1,19 @@
-* text=auto
 *.php linguist-detectable=true
-*.js linguist-detectable=false
 *.blade.php linguist-language=PHP
+
+*.js linguist-detectable=false
+*.css linguist-detectable=false
+*.scss linguist-detectable=false
+*.md linguist-detectable=false
+
+vendor/* linguist-vendored
+node_modules/* linguist-vendored
+
+resources/sass/* linguist-detectable=false
+resources/scss/* linguist-detectable=false
+
 *.blade.php diff=html
 *.css diff=css
 *.html diff=html
 *.md diff=markdown
 *.php diff=php
-*.css linguist-detectable=false
-*.md linguist-detectable=false
-*.scss linguist-detectable=false
-
-/.github export-ignore
-CHANGELOG.md export-ignore
